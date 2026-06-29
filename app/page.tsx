@@ -1,13 +1,18 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Home() {
-  const daysTillTheDay = 14;
-  const [totalSeconds, setTotalSeconds] = useState<number>(daysTillTheDay*86400);
+  const [totalSeconds, setTotalSeconds] = useState<number>(0);
   const [days,setDays] = useState(Math.floor(totalSeconds/(3600*24)));
   const [hours, setHours] = useState(Math.floor((totalSeconds/3600)%24));
   const [minutes, setMinutes] = useState(Math.floor((totalSeconds/60)%60));
   const [seconds, setSeconds] = useState(totalSeconds%60);
+
+  useEffect(() => {
+    fetch('/api/seconds')
+      .then((res) => res.json())
+      .then((data) => setTotalSeconds(data.seconds));
+  },[])
 
   const makeTimeVal = (timevar: number) => {
     if(timevar < 10) {
