@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  background-image: url("https://cdn.discordapp.com/attachments/475828437316272138/1520951459229863976/Zw.png?ex=6a430fed&is=6a41be6d&hm=921da219bc47a8e03770e3e87283ec9e472cb0db049db9a307b9ac7cd0501c87&");
   --foreground: #171717;
 }
 

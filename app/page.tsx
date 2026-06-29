@@ -32,28 +32,8 @@ export default function Home() {
 
   return (
     <div className="flex font-sans flex-col gap-2 width-full min-h-screen justify-center items-center">
-      <h1 className="text-white text-3xl mb-2">David's oil rig will explode in</h1>
-      <div className="flex flex-row">
-        <div className="flex flex-col gap-2">
-          <div className="border rounded-xl text-xl ml-2 p-2">{makeTimeVal(days)}</div>
-          <div className="text-xl p-2">days</div>
-        </div>
-        <div className="text-xl ml-2 p-2">:</div>
-        <div className="flex flex-col gap-2">
-          <div className="border rounded-xl text-xl ml-2 p-2">{makeTimeVal(hours)}</div>
-          <div className="text-xl p-2">hrs</div>
-        </div>
-        <div className="text-xl ml-2 p-2">:</div>
-        <div className="flex flex-col gap-2 justify-center">
-          <div className="border rounded-xl text-xl ml-2 p-2">{makeTimeVal(minutes)}</div>
-          <div className="text-xl p-2">mins</div>
-        </div>
-        <div className="text-xl ml-2 p-2">:</div>
-        <div className="flex flex-col gap-2">
-          <div className="border rounded-xl text-xl ml-2 p-2">{makeTimeVal(seconds)}</div>
-          <div className="text-xl p-2">secs</div>
-        </div>
-      </div>
+      <h1 className="text-white text-3xl mb-2">This was a joke to a friend and not actually some kind of threat. Hope you understand thanks</h1>
+      
     </div>
   );
 }
